@@ -1,0 +1,4 @@
+price_alert_job:
+  cron: "*/1 * * * *"
+  class: "PriceAlertWorker"
+  queue: price_alert_queue

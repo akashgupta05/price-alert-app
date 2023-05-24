@@ -1,0 +1,14 @@
+<!-- app/views/price_alert_mailer/price_alert_email.html.erb -->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+  <h1>Price Alert</h1>
+  <p>Hello <%= @user.name %>,</p>
+  <p>The price you set as a target has been reached.</p>
+  <p>Current price: <%= number_to_currency(@alert.target_price) %></p>
+  <p>Thank you for using our price alert service.</p>
+</body>
+</html>
